@@ -1,7 +1,7 @@
 # RxHome
-A lightweight RxSwift library for HomeKit accesories
+A lightweight RxSwift library for HomeKit accesories.
 
-Note: RxHome is currently still in alpha, it's not advised to use it in production codebase
+Note: RxHome is currently still early work in progress, technically in alpha, it's not advised to use it in production codebase
 
 ## Installation
 
@@ -47,6 +47,9 @@ homeManager
 ```
 
 You will find more examples in the 'RxHome Example' app code included in the repository.
+
+## Support
+Let me know if you have suggestions, corrections, questions either by starting an issue, PR or simply sending an email to: <matas.petrikas@gmail.com>
 
 ## License
 RxHome is available under the MIT LIcense. See the LICENSE file for more info.

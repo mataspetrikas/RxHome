@@ -13,6 +13,7 @@
 		61907AC72059271700851620 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61907AC82059271700851620 /* RxSwift.framework */; };
 		61907AC92059275200851620 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61907ACA2059275200851620 /* RxCocoa.framework */; };
 		61907ACC2059275800851620 /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61907ACB2059275800851620 /* HomeKit.framework */; };
+		61907ACE205929A700851620 /* RxHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61907ACD205929A700851620 /* RxHome.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		61907AC82059271700851620 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61907ACA2059275200851620 /* RxCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61907ACB2059275800851620 /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
+		61907ACD205929A700851620 /* RxHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxHome.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				61907A6D2059259900851620 /* RxHome.h */,
+				61907ACD205929A700851620 /* RxHome.swift */,
 				61907A6E2059259900851620 /* Info.plist */,
 			);
 			path = RxHome;
@@ -168,6 +171,7 @@
 				TargetAttributes = {
 					61907A692059259900851620 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					61907A722059259A00851620 = {
@@ -216,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61907ACE205929A700851620 /* RxHome.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +359,7 @@
 		61907A7F2059259A00851620 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -367,6 +373,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.vaikai.RxHome;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -375,6 +382,7 @@
 		61907A802059259A00851620 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -396,6 +404,7 @@
 		61907A822059259A00851620 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 687YMLKS9D;
 				INFOPLIST_FILE = RxHomeTests/Info.plist;
@@ -410,6 +419,7 @@
 		61907A832059259A00851620 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 687YMLKS9D;
 				INFOPLIST_FILE = RxHomeTests/Info.plist;

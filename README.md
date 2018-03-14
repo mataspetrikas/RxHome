@@ -28,6 +28,7 @@ Then, run `carthage update` to build framework and drag `RxHome.framework` into 
 Make sure you import the library in your code
 
 ```swift
+import RxSwift
 import RxHome
 ```
 
